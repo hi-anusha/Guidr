@@ -1,0 +1,167 @@
+{% extends "layout.html"%} {% block content%}
+
+
+<div class="row">
+    <div class="col-8 mx-auto">
+
+        <!-- Profile widget -->
+
+        <div class=" shadow rounded overflow-hidden">
+            <div class="px-4 pt-0 bg-dark ">
+                <div class="media align-items-end profile-header">
+                    <img class=" rounded-circle" src="static\student.jpg" style="width:200px; height:200px">
+                    <div class="media-body text-white" style="transform:translateY(-30%)">
+
+                        <h1 class=" ml-10" style="text-shadow: 2px 1px 1px #7d7d7d;"> {{ i.username }}</h1>
+                        &nbsp;&nbsp; <!--<p class="small mb-4"> Working/Studying at IITB</p> -->
+                      <p class="small mb-4"> Working/Studying at {{i.institute}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light p-4 d-flex justify-content-end text-center"
+                 style="background:#F0F2F5  !important;height:80px">
+
+
+                <div class="col-md-4 text-center">
+
+                    <a href="{{i. github}}" target="_blank" class="btn-social btn-github"><i
+                            class="fa fa-github"></i></a>
+                    <a href="{{i.linkedin}}" target="_blank" class="btn-social btn-linkedin"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+
+                <ul class="list-inline mb-0">
+
+                    <li class="list-inline-item">
+                        <br>
+                        <h5 class="font-weight-bold mb-0 d-block">5{{i.score}}</h5><small class="text-muted">
+                        Score</small>
+
+                    </li>
+                </ul>
+            </div>
+            <br>
+            <div class="row" style="background:white">
+                <div class="py-4 px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <h3 class="mb-0">About</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 mb-2" style="padding:2%">
+                         <center> {{i.about}}</center>
+                        
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="py-4 px-4">
+
+                    <div class="row">
+
+                        <div class="col-lg-5 mb-2 pr-lg-1" style="padding:2%; margin-left:2%">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h3 class="mb-0 text-center">Skills</h3>
+                            </div>
+                            
+                             
+                             {{i.skills}}
+                             
+                            <br><br>
+                            {% if i.verifiedskills%}
+                            {{i.verifiedskills}}
+                            <span class="badge-sm badge-success badge-pill" style="font-size:12px">Verified</span>
+
+                            {% endif%}
+
+                            <br> <br>
+                            <br> <br>
+                            <button type="button" class="btn btn-dark" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                Explore skill asssments
+                            </button>
+
+                        </div>
+                       
+
+
+                    <br>
+
+
+                    <br><br>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Assessments</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="scroller">
+
+                                        <br>
+                                        <button class="btn btn-dark">Android</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Angular</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Bash</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">C++</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Django</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Golang</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Hadoop</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Java</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark"><a class="" href="/verifiedskills" style="color:white"> Javascript</a>
+                                        </button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Kotlin</button>
+                                        <br>
+                                        <hr>
+                                        <button class="btn btn-dark">Lisp</button>
+                                    </div>
+
+                                    <br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock%}

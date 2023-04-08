@@ -1,5 +1,5 @@
 # Guidr
- A complete guide - "from the student to the student"
+ A complete guide - "from the students to the students"
  
 The recent days, there has been significant changes, especially in the educational and industrial sectors. The enormous number of layoffs are taking place due to recession and difficulties are faced by students due to the closing down of their institutes. This has inspired us to do something about it.
 
@@ -11,14 +11,21 @@ Students can verify their skills by taking our assessments. Students are also en
 
 Recruiters get to network with potential candidates with proven skills.
 
+
 # Potential Users
 Students- who are overwhelmed with the influence of online resources and who need a helping hand.
-Mentors - who are looking for a platform to showcase their skills and also help the students in need.
-Recruiters - who are ina lookout for the right candidate for the post.
 
-# Workflow of the poduct
+Mentors - who are looking for a platform to showcase their skills and also help the students in need.
+
+Recruiters - who are in a lookout for the right candidate for the post.
+
+
+
+# Workflow of the project
+
 
 # Section 1 - Students and Mentors
+
 
 The students and mentors can register or login into the application.
 ![2](https://user-images.githubusercontent.com/101932817/230730207-268dce0b-1a03-460c-bc10-a10e533b5080.jpeg)
@@ -52,11 +59,13 @@ Students can also get their skills verified by taking skill tests.
 ![14](https://user-images.githubusercontent.com/101932817/230731064-3208c5fe-e54a-4b7d-a88a-8f7287077bc5.jpeg)
 
 
-Students can also get an oppertunity to connect with the recruiters.
+Students can also get an opportunity to connect with the recruiters.
 ![9](https://user-images.githubusercontent.com/101932817/230730952-1138c234-c49c-4274-8633-b08423326847.jpeg)
 
 
-# Section 2 - Recuiters
+
+# Section 2 - Recruiters
+
 
 The recruiters can register or login into the platform.
 ![15](https://user-images.githubusercontent.com/101932817/230731137-4adf3fde-c28b-4e03-a766-b20ce80c8575.jpeg)
@@ -72,38 +81,51 @@ Recruiters can look into top performing candidate's profile and accept to connec
 ![13](https://user-images.githubusercontent.com/101932817/230731043-ffcae7bf-ceba-4be7-9448-6f626dec37c2.jpeg)
 
 
+
 # Chatbot
 
 ![17](https://user-images.githubusercontent.com/101932817/230731227-2e3382d1-65e0-4f9d-a0cc-5a6f41a14c6d.jpeg)
 ![image](https://user-images.githubusercontent.com/101932817/230731262-00d917fe-5943-4b81-8034-4bf58d8a06eb.png)
 
 
+
 # Installation
+
 
 • Fork & Clone the repo
 
-`git clone https://github.com/[yourname]/Mentr.me.git`
+`git clone https://github.com/hi-anusha/Guidr.git`
 
 • Navigate through the project
 
-`cd guidr`
+`cd Guidr`
 
 • Install all requirements
+
+Install pip, python and flask along with all the necessary requirements
 
 `pip install -r requirements.txt`
 
 • Run :
 `python index.py`
 
-Copy the localhost url (usually localhost:5000/) and paste in browser
-
-
-The databases in the system:
-User
-Question : Keeps track of all questions raised by a user
-Response : Keeps track of all response (the bidding part) given by a user
-Assigned : Stores the details of all user who are assigned to a particular question
+Copy the localhost url (usually localhost:5000) and paste in browser
 
 
 
+# The databases in the system:
+
+• User
+
+• Question : Keeps track of all questions raised by a user
+
+• Response : Keeps track of all response (the bidding part) given by a user
+
+• Assigned : Stores the details of all user who are assigned to a particular question
+
+
+
+# File Structure
+
+![18](https://user-images.githubusercontent.com/101932817/230732073-8f7f6c18-b51a-468e-b63e-9a7f8b4cc62c.jpeg)
 

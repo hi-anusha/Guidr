@@ -200,8 +200,7 @@ def add():
                                 shortdescription=request.form['shortdescription'],
                                 detaileddescription=request.form['detaileddescription'],
                                 pay=request.form['pay'], tags=t, askedby_id=user_id,
-                                askedby_name=User.query.get(user_id).username,
-                                askedby_img=User.query.get(user_id).image)
+                                askedby_name=User.query.get(user_id).username)
         flash("New question has been succesfully added")
         db.session.add(new_question)
         db.session.commit()

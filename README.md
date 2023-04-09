@@ -127,5 +127,6 @@ Copy the localhost url (usually localhost:5000) and paste in browser
 
 # File Structure
 
-![18](https://user-images.githubusercontent.com/101932817/230732073-8f7f6c18-b51a-468e-b63e-9a7f8b4cc62c.jpeg)
+![19](https://user-images.githubusercontent.com/101932817/230763349-dcea898a-d6a0-4126-8ffe-b6f0649ed41d.jpeg)
+
 

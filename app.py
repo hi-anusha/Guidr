@@ -18,7 +18,7 @@ class User(db.Model):
     password = db.Column(db.String(50))
     typeOfAccount = db.Column(db.String(10))
     credentials = db.Column(db.String(50))
-    image = db.Column(db.String(50))
+   
     about = db.Column(db.String(50))
     skills = db.Column(db.String(50))
     institute = db.Column(db.String(50))
@@ -66,7 +66,7 @@ class Recruiter(db.Model):
     password = db.Column(db.String(50))
     company = db.Column(db.String(200))
     credentials = db.Column(db.String(50))
-    image = db.Column(db.String(50))
+  
     roles = db.Column(db.String(50))
 
 
@@ -110,7 +110,7 @@ def register():
         new_user = User(username=request.form['username'],
                         password=request.form['password'], typeOfAccount=request.form['typeOfAccount'],
                         credentials=request.form['credentials'], institute=request.form['institute'],
-                        skills=request.form['skills'], image=request.form['image'], about=request.form['about'],
+                        skills=request.form['skills'], about=request.form['about'],
                         github=request.form['github'], linkedin=request.form['linkedin'])
 
         db.session.add(new_user)

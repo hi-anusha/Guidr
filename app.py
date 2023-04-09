@@ -149,7 +149,7 @@ def Rregister():
     if request.method == 'POST':
         new_recruiter = Recruiter(username=request.form['username'],
                                   password=request.form['password'], company=request.form['company'],
-                                  credentials=request.form['credentials'], image=request.form['image'],
+                                  credentials=request.form['credentials'],
                                   roles=request.form['roles'])
 
         db.session.add(new_recruiter)

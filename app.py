@@ -217,11 +217,11 @@ def ParticularQuestion():
     if request.method == 'POST':
         id = request.args['questionid']
         username = User.query.get(session['user']).username
-        image=User.query.get(session['user']).image
+        
         print('question id is', id)
         new_response = Response(username=username,
                                 description=request.form['description'],
-                                pay=request.form['pay'], questionID=id, image=image)
+                                pay=request.form['pay'], questionID=id)
         db.session.add(new_response)
         db.session.commit()
         return redirect(url_for('index'))
@@ -233,11 +233,11 @@ def ParticularQuestion():
         isSamePerson = args['user']
         print(isSamePerson)
         user = questionid.askedby_id
-        img = User.query.get(user).image
+        
         username = User.query.get(user).username
         response = Response.query.filter_by(questionID=questionid.id).all()
         print("response is", response)
-        return render_template('ParticularQuestion.html', question=questionid, username=username, img=img,
+        return render_template('ParticularQuestion.html', question=questionid, username=username, 
                                response=response,
                                isSamePerson=isSamePerson)
 

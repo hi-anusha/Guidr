@@ -107,7 +107,7 @@ Install pip, python and flask along with all the necessary requirements
 `pip install -r requirements.txt`
 
 • Run :
-`python index.py`
+`python app.py`
 
 Copy the localhost url (usually localhost:5000) and paste in browser
 
